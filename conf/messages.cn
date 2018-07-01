@@ -1,0 +1,8 @@
+btn.cancel=Cancel
+btn.save=保存
+btn.delete=Delete
+
+btn.create=创建
+btn.reset=重置
+
+action.congratulationsSuccess = 恭喜,操作成功

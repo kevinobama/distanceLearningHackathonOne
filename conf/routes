@@ -1,0 +1,21 @@
+
+# Map static resources from the /public folder to the /assets URL path
+ GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+# GET     /assets/*file               controllers.Assets.at(path="/assets", file)
+ 
+GET     /                       controllers.HomeController.index
+#----------------holdings-----------------------------------------------------
+#----------------settings-----------------------------------------------------
+
+# logs
+
+
+GET     /login                  controllers.UsersController.login()
+POST    /login                 controllers.UsersController.authenticate()
+GET     /logout                  controllers.UsersController.logout()
+
+# GET     /langs/:lang                      controllers.LangsController.index(lang:String)
+
+#----------------dashboard-----------------------------------------------------
+GET    /dashboard/index             controllers.DashboardController.index
+GET    /dashboard/teaching             controllers.DashboardController.teaching(teacher:String)

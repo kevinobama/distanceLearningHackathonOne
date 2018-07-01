@@ -1,0 +1,74 @@
+@()
+
+
+@main("Dashboard","Dashboard")   {
+
+<style>
+
+</style>
+    <section class="content-header">
+      <h1>
+          My Teachers &nbsp;
+      </h1>
+    </section>
+    <!-- Main content -->
+    <section class="content container-fluid">
+      <div class="box box-primary"> 
+        <div class="box-body">
+
+        <table class="computers zebra-striped" width="100%">
+            <tbody>
+
+                    <tr >
+                            <td width="20%">
+
+                                <img src="@routes.Assets.versioned("dist/img/teacherOne.jpg")" width="200" height="200">
+                                <p>Kim Jun</p>
+                                <p>Korean in English</p>
+                                <p><a href="/dashboard/teaching?teacher=KimJun" class="btn btn-success">Join</a> </p>
+
+                            </td>
+                            <td width="20%">
+
+                                <img src="@routes.Assets.versioned("dist/img/billgates.jpg")" width="200" height="200">
+                                <p>bill gates</p>
+                                <p>English</p>
+                                <p><a href="/dashboard/teaching?teacher=billgates" class="btn btn-success">Join</a> </p>
+
+                            </td>
+                            <td width="20%">
+
+                                <img src="@routes.Assets.versioned("dist/img/MarkZuckerberg-crop.jpg")" width="200" height="200">
+                                <p>Mark Zuckerberg</p>
+                                <p>English</p>
+                                <p><a href="/dashboard/teaching?teacher=MarkZuckerberg" class="btn btn-success">Join</a> </p>
+
+                            </td>
+                            <td width="20%">
+                                <img src="@routes.Assets.versioned("dist/img/obama.jpeg")" width="200" height="200">
+                                <p>obama</p>
+                                <p>English</p>
+                                <p><a href="/dashboard/teaching?teacher=obama" class="btn btn-success">Join</a> </p>
+                            </td>
+                                                    
+                            <td width="20%">
+                                <img src="@routes.Assets.versioned("dist/img/XiJinping.jpg")" width="200" height="200">
+                                <p>Xi Jin ping</p>
+                                <p>Chinese</p>
+                                <p><a href="/dashboard/teaching?teacher=XiJinping" class="btn btn-success">Join</a> </p>
+                            </td> 
+
+                    </tr>
+            </tbody>
+        </table> 
+
+
+        </div>
+      </div>
+
+ 
+
+       
+    </section>
+
+}

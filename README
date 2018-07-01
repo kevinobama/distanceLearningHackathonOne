@@ -1,0 +1,42 @@
+Creating JSON Values
+
+A JSON array contains a list of values separated by commas and enclosed within [ and ] characters:
+
+
+["abc", 10, null, true, false]
+
+
+production
+specify port
+bin/viewfinquanttradingai -Dplay.http.secret.key=kevin -Dhttp.port=9008 &
+
+
+upstream viefin-quant-trading-backend {
+     server 127.0.0.1:9000;
+}
+
+server {
+    listen 80;
+    server_name _;
+             
+    charset utf-8;
+
+    location / {    
+       proxy_pass http://viefin-quant-trading-backend;        
+    }
+
+   location /csv {
+      alias /var/www/java/cryptoQuantTradingFiles/csv;      
+   }
+
+   
+    sendfile off;
+
+    client_max_body_size 100m;
+
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}

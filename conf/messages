@@ -1,0 +1,21 @@
+btn.cancel=Cancel
+btn.save=Save
+btn.delete=Delete
+btn.create=Create
+btn.reset=Reset
+
+modal.close.btn=Close
+modal.cancel.btn=Cancel
+modal.delete.btn=Delete
+modal.btn.close=Close
+modal.btn.cancel=Cancel
+modal.btn.delete=Delete
+layout.title=Administration
+layout.user.title=User
+search.no.result=no results
+language.label.de=German
+language.label.fr=French
+language.label.en=English
+
+
+action.congratulationsSuccess = Congratulations Success
